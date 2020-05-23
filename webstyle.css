@@ -7,6 +7,28 @@ body {
     width: auto;
     height: 813px;
     padding-top: 50px;
+
+}
+.marsMove {
+    animation-name: marsMoveAnimation;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+.marsMoveReverse{
+    animation-name: marsMoveReverse;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+}
+@keyframes marsMoveAnimation {
+    0% {height: 813px;}
+    100% {height: 211px;}
+}
+@keyframes marsMoveReverse {
+    0% {height: 813px;}
+    100% {height: 211px;}
 }
 a {
     position: relative;
@@ -100,10 +122,18 @@ a:hover span:nth-child(4)
     vertical-align: top;
 }
 
-.variable{
+.selected-Harry{
     position: fixed;
-    height: 450px;
+    height: 480px;
     width: auto;
-    left: -310px;
-    top: 240px;
+    left: 39px;
+    top: 350px;
+}
+.mars-block {
+    min-width: 500px
+}
+.Harry-img{
+    height:450px;
+    width:auto;
+    border-radius:225px;
 }
